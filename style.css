@@ -141,6 +141,7 @@ a {
 }
 
 .hero-img img {
+  outline: solid 5px var(--main-color);
   width: 23rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
