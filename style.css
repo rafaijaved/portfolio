@@ -72,7 +72,7 @@ a {
   width: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
   background-color: #ffffff;
-  z-index: 99;
+  z-index: 2;
 }
 
 .nav-bar a {
@@ -141,7 +141,6 @@ a {
 }
 
 .hero-img img {
-  outline: solid 5px var(--main-color);
   width: 23rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -722,7 +721,6 @@ lottie-player {
     top: 0;
     overflow: none;
     background-color: var(--bg-color);
-    z-index: 98;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -752,10 +750,11 @@ lottie-player {
   }
 
   .navbar-toggle {
-    display: grid;
+    display: flex;
     position: absolute;
     right: 30px;
     top: 23px;
+    z-index: 99;
   }
 
   .navbar-toggle i {
@@ -765,7 +764,6 @@ lottie-player {
   .close-toggle {
     display: grid;
     position: fixed;
-    z-index: 99;
     top: 23px;
     right: 25px;
   }
