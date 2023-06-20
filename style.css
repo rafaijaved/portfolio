@@ -142,11 +142,40 @@ a {
 
 .hero-img img {
   width: 23rem;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  border: solid 5px var(--main-color);
+  animation: animate 10s ease-in-out infinite;
+  -webkit-animation: animate 7s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -webkit-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -moz-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -ms-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -o-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    -webkit-border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    -moz-border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    -ms-border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    -o-border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -webkit-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -moz-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -ms-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -o-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 .hero-social-logo {
@@ -754,7 +783,6 @@ lottie-player {
     position: absolute;
     right: 30px;
     top: 23px;
-    z-index: 99;
   }
 
   .navbar-toggle i {
